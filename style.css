@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;   
+}
+
+h1 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
