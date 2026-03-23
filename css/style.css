@@ -1,19 +1,100 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: #111;
-    color: #fff;
-    text-align: center;   
-}
-
-h1 {
-    font-weight: 600;
-}
-
-p {
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/jetbrainsmono/JetBrainsMono-Regular.woff2');
     font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A0A0A;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #414141;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 1133px;
+}
+
+.navbar {
+    background-color: #0A0A0A;
+    padding: 0 40px;
+}
+
+.logo {
+    position: relative;
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.logo::after {
+    content: "/";
+    color: #A2A2A2;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 8px;
+    margin-left: 14px;
+    letter-spacing: -0.16px;
+    font-size: 14px;
+}
+
+.navbar-links a {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+    color: #0080FF;
+}
+
+.navbar-items-side {
+    margin-left: auto;
+}
+
+.github a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #161616;
+    height: 30px;
+    min-width: 100px;
+    padding-top: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: 0.6s ease;
+}
+
+.github a:hover {
+    background-color: #A2A2A2;
 }
